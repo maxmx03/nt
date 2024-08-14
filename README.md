@@ -31,6 +31,10 @@ Creating a new note is straightforward. Just use the `nt` command:
 nt create
 ```
 
+> [!NOTE]
+> By default, the script opens Neovim as your editor. If you'd prefer to use a
+different editor, you can easily change this by setting the `$EDITOR` variable
+
 ## Additional Commands
 
 To explore more commands and options, use:
