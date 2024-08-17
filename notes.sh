@@ -34,7 +34,7 @@ function _nt_unregister() {
 
 function _nt_open() {
   declare note
-  note=$(gum choose $(grep "" "$NOTES_NOTE_LIST"))
+  note=$(gum filter --limit 1 $(grep "" "$NOTES_NOTE_LIST"))
   $EDITOR "$NOTES_DIR/$note"
 }
 
