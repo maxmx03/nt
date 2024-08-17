@@ -40,7 +40,7 @@ function _nt_open() {
 
 function _nt_read() {
   declare note
-  note=$(gum choose $(grep "" "$NOTES_NOTE_LIST"))
+  note=$(gum filter --limit 1 $(grep "" "$NOTES_NOTE_LIST"))
   less -N "$NOTES_DIR/$note"
 }
 
