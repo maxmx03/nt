@@ -45,6 +45,7 @@ function _nt_read() {
 }
 
 function _nt_create() {
+  tree "$NOTES_DIR"
   declare file=$(gum input --placeholder "folder/note.md")
   declare file_path="$NOTES_DIR/$file"
   declare content=$(basename "$file_path")
